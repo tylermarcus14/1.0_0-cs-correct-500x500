@@ -1,0 +1,29 @@
+{
+   "browser_action": {
+      "default_icon": {
+         "19": "icon19.png",
+         "38": "icon38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Shopify Bot"
+   },
+   "background": {
+       "scripts": ["background.js"],
+       "persistent": false
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-2.1.4.min.js", "content.js" ],
+      "matches": [ "<all_urls>" ]
+   } ],
+   "description": "Allows users to see inventory info on Shopify products",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgaJYcpnTvYlX34cx9TXD1ngk5T4ykOQYQn+P3Q0422bfr1PUfkJmR/JbC3Zc1ZszrSgZXB3EkP/G6cUhxyW6jq0S0P5LKrq9k2ohEVv7056lPvnQihGUY7oHGw1pxBmJRAob/KACBuPeGydSTtaPDILj1DnSQhKONKcFmMuc8OmOeN4Q6UhfN1/U/JiFR3hbveX8tmM9HM66HKDOXD4p0CUL6zRBTofrGnqelbhY01adGEddq86FHKIuy2THwPaQBpRdjN575AFur3cQEUZmzIXebd7BxR8vdlZ42jv1yIaAcrpfLKX1+7qmOzRgzBUF6tkRq5aZsuzFQTytelthjQIDAQAB",
+   "manifest_version": 2,
+   "name": "Shopify Item Extension",
+   "permissions": [ "activeTab" ],
+   "version": "1.0"
+}
